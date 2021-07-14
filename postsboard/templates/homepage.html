@@ -1,0 +1,12 @@
+{% extends "base_layout.html" %}
+{% block title %}The Posts Board{% endblock %}
+{% block content %}
+  {% for post in posts %}
+  <article class="blog-post">
+      <a href="/post/{{ post['id'] }}"><h2 class="blog-post-title">{{post['title']}}</h2></a>
+      <p class="blog-post-meta">Created at: {{post['created_at']}}</p>
+      <p>{{post['text']}}</p>
+      <hr>
+  </article>
+  {% endfor %}
+{% endblock %}

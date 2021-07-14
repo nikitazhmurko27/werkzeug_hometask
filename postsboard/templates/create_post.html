@@ -1,0 +1,21 @@
+{% extends "base_layout.html" %}
+{% block title %}Create new post{% endblock %}
+{% block content %}
+<div class="create_new_post">
+  <h3>Create new post</h3>
+<form action="" method="post">
+  <label for="title">Post title: </label>
+  <input id="title" type="text" name="title" value="{{title}}">
+  <label for="content">Post content: </label>
+  <textarea name="content" id="content">{{content}}</textarea>
+  <label for="author">Post author: </label>
+  <input type="text" id="author" name="author" value="{{author}}">
+  <input class="submit_btn" type="submit">
+</form>
+  <p class="errors">
+      {% for error in errors %}
+          <span>{{error}}</span><br>
+      {% endfor %}
+  </p>
+</div>
+{% endblock %}

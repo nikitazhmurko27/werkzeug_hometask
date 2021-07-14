@@ -1,0 +1,36 @@
+article{
+    margin: 10px auto;
+    width: 750px;
+    border: 1px solid #afafaf;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.posts{
+    display: flex;
+    flex-direction: column;
+}
+
+.comments{
+    margin-left: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 300px;
+}
+
+.submit_btn{
+    margin: 10px 0;
+}
+
+.create_new_post{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.errors{
+    color:red;
+}
